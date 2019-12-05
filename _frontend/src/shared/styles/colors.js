@@ -1,4 +1,4 @@
-const colors = {
+const baseColors = {
   white: "#ffffff",
   black: "#000000",
   blue: "#007bff",
@@ -41,6 +41,13 @@ const colors = {
   mars: "#fd8e86",
   marsLight: "#ffb8af",
   marsLightest: "#ffe3d4"
+};
+
+const colors = {
+  ...baseColors,
+  primaryText: baseColors.moonDark,
+  headlineText: baseColors.sunDark,
+  background: baseColors.earthLightest
 };
 
 export default colors;
